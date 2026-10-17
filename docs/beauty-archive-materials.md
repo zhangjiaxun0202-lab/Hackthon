@@ -1,14 +1,20 @@
 # Beauty Archive 资料与验证清单
 
+
 ## 资料分类
+
 
 ### 基线原型
 
+
 beauty-archive-source/ 是仓库原有的单文件原型，保留用于对照早期交互、文案和数据边界。
+
 
 ### 当前发布包
 
-releases/Beauty-Archive-Warm-Liquid-Glass-2026-10-17.zip 是当前整理后的网页端版本，包含：
+
+[GitHub Release 下载包](https://github.com/zhangjiaxun0202-lab/Hackthon/releases/download/v2026.10.17-liquid-glass/Beauty-Archive-Warm-Liquid-Glass-2026-10-17.zip) 是当前整理后的网页端版本，包含：
+
 
 - 29 个界面路由和原图对照
 - 产品图鉴、妆容记录、产品生命周期
@@ -18,7 +24,9 @@ releases/Beauty-Archive-Warm-Liquid-Glass-2026-10-17.zip 是当前整理后的�
 - 本地图片、产品包装图、导师肖像和教程素材
 - 暖棕 Liquid Glass 主题与页面/弹层转场
 
+
 ## 发布包验证
+
 
 - ZIP 完整性测试通过
 - 共 99 个压缩条目（含目录条目）
@@ -27,24 +35,11 @@ releases/Beauty-Archive-Warm-Liquid-Glass-2026-10-17.zip 是当前整理后的�
 - 29 个路由逐页打开，无 undefined、NaN 或浏览器错误
 - 发布包 SHA-256：808c51826d1a734619b0ec9db9193caaaa19113ac9b1953299ae9410f4e3b8b4
 
+
 ## 原始来源记录
+
 
 最初的 Beauty-Archive-Netlify-Ready-2026-10-17.zip 已做过只读完整性检查：
 
+
 - SHA-256：5a44b1efdfc6956abda65017fe4a5dab6ff188e1140a8cb6597696d0a2147906
-- 97 个文件，解压约 41.7 MB
-- 无加密、无路径穿越、无符号链接
-- 原始包是静态站点源码，没有后端或真实 AI 接口
-
-## 运行边界
-
-- AI 分析、相似度、导师匹配和教程均为预设演示。
-- 上传素材只使用浏览器本地 object URL 预览。
-- 状态保存在当前浏览器的 localStorage 中。
-- 导出 JSON 会包含当前演示中的画像、产品和妆容记录。
-- 浏览器语音识别可能使用浏览器厂商提供的识别服务。
-- 图标库中的独立 SVG 链接仍有一个已知缺口：发布包没有 icons/ 目录；主原型页面不受影响。
-
-## 素材与授权
-
-包内没有统一的素材授权文件。部分图片带有生成溯源元数据；欧莱雅产品包装图、人物肖像和生成图像在对外发布前需要单独核实来源、授权和品牌使用边界。
